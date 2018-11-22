@@ -6,10 +6,10 @@ defaults: &defaults
   REDIS_PASSWORD: ~ # By default no password is sent to Redis server. Change this if you want to connect using password.
 
   # Comma-separated list of administrators.
-  ADMIN: 'admin@peatio.tech'
+  ADMIN: 'kibetleonard8@gmail.com,localremit@gmail.com,lotesmolapo@gmail.com,rethinksoft@gmail.com'
 
   # Application URL configuration variables.
-  URL_HOST:                peatio.tech
+  URL_HOST:                account.remidax.com
   URL_SCHEME:              http
   FORCE_SECURE_CONNECTION: 'false' # Set to "true" to disable access via unsecured HTTP, send HSTS headers and use secure cookies.
 
@@ -25,9 +25,9 @@ defaults: &defaults
 
   # Configuration variables for sign in with Google.
   # See https://github.com/zquestz/omniauth-google-oauth2
-  GOOGLE_CLIENT_ID:
-  GOOGLE_CLIENT_SECRET:
-  GOOGLE_OAUTH2_REDIRECT_URL: ~ # Specify URL address to which user will be redirected after successful sign in.
+  GOOGLE_CLIENT_ID:788890335504-8n6fmpq4i7grnakp89p6v557g3s079rv.apps.googleusercontent.com
+  GOOGLE_CLIENT_SECRET:rBTDXW78QyrRo77pBG9OW23S
+  GOOGLE_OAUTH2_REDIRECT_URL:http://account.remidax.com/funds
 
   # Configuration variables for sign in with Auth0.
   # See https://github.com/auth0/omniauth-auth0
@@ -59,9 +59,9 @@ defaults: &defaults
   SENTRY_DSN_FRONTEND: ~          # Specify Sentry DSN used for JavaScript application.
 
   # Customize page metadata like title, description & keywords for landing, cabinet & admin modules.
-  METADATA_TITLE:       Peatio Exchange
-  METADATA_DESCRIPTION: The Opensource Cryptocurrency Exchange
-  METADATA_KEYWORDS:    Peatio,Opensource,Exchange,Cryptocurrency
+  METADATA_TITLE:       Remidax Exchange
+  METADATA_DESCRIPTION: Hybrid Cryptocurrency Exchange
+  METADATA_KEYWORDS:    Remidax,Opensource,Exchange,Cryptocurrency
 
   # Customize bank details which is shown at fiat deposit page. You are free to supply HTML here.
   BANK_DETAILS_HTML: |
@@ -139,9 +139,9 @@ defaults: &defaults
   DISPLAY_CURRENCY: usd
 
   # Configuration variables for dynamic Barong levels (1.8+).
-  MINIMUM_MEMBER_LEVEL_FOR_DEPOSIT:  '3'
-  MINIMUM_MEMBER_LEVEL_FOR_WITHDRAW: '3'
-  MINIMUM_MEMBER_LEVEL_FOR_TRADING:  '3'
+  MINIMUM_MEMBER_LEVEL_FOR_DEPOSIT:  '0'
+  MINIMUM_MEMBER_LEVEL_FOR_WITHDRAW: '0'
+  MINIMUM_MEMBER_LEVEL_FOR_TRADING:  '0'
 
   # Event API configuration.
 
@@ -163,7 +163,7 @@ defaults: &defaults
 
   RANGER_HOST: '0.0.0.0'
   RANGER_PORT: '8081'
-  RANGER_CONNECT_SECURE: false
+  RANGER_CONNECT_SECURE: true
 
   BULLET: 'false'
 
@@ -174,8 +174,8 @@ development:
   OAUTH2_SIGN_IN_PROVIDER:    google
 
   # Development configuration variables for sign in with Google.
-  GOOGLE_CLIENT_ID:           1044454023387-emhp5vmfnp5cf1n9juk09g8gcckrova7.apps.googleusercontent.com
-  GOOGLE_CLIENT_SECRET:       tAFZvO200-0z3MpCyOpkPH0G
+  GOOGLE_CLIENT_ID:           788890335504-8n6fmpq4i7grnakp89p6v557g3s079rv.apps.googleusercontent.com
+  GOOGLE_CLIENT_SECRET:       rBTDXW78QyrRo77pBG9OW23S
 
   # Development configuration variables for sign in with Auth0.
   AUTH0_OAUTH2_DOMAIN:        peatio-playground.auth0.com
